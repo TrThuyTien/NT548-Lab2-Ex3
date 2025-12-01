@@ -13,6 +13,7 @@ app.use(body_parser.json());
 app.use('/api/user', userRouter);
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));  
 
+const port = process.env.PORT || 5001;
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);
 });
