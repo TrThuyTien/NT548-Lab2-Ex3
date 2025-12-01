@@ -7,11 +7,11 @@ const options = {
     info: {
       title: 'KitchenWhiz API Documentation',
       version: '1.0.0',
-      description: 'Swagger API docs for KitchenW project including User and Dish modules',
+      description: 'Swagger API docs for User Service',
     },
     servers: [
       {
-        url: `http://localhost:${process.env.PORT}/api`, 
+        url: `http://localhost:${process.env.PORT}/api/user`, 
       },
     ],
     components: {
